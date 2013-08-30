@@ -4,8 +4,68 @@
 		"selected_items":
 		[
 			[
+				"cli",
+				"click_button"
+			],
+			[
+				"ex",
+				"expect"
+			],
+			[
+				"fi",
+				"fill	fill_in \"id_or_name_or_label\", :with => \"value\""
+			],
+			[
+				"b",
+				"bef	before...end"
+			],
+			[
+				"i",
+				"i	it { }"
+			],
+			[
 				"have",
-				"have_title"
+				"have_content"
+			],
+			[
+				"user",
+				"user_with_invalid_password"
+			],
+			[
+				"be",
+				"be_valid"
+			],
+			[
+				"password",
+				"password_confirmation"
+			],
+			[
+				"dup",
+				"duplicate_user"
+			],
+			[
+				"e",
+				"e	expect().to"
+			],
+			[
+				"should",
+				"should_not"
+			],
+			[
+				"v",
+				"vp	validates_presence_of"
+			],
+			[
+				"up",
+				"up"
+			],
+			[
+				"About",
+				"About"
+			],
+			[
+				"it",
+				"it_should_behave_like"
 			],
 			[
 				"page",
@@ -32,29 +92,42 @@
 	"buffers":
 	[
 		{
-			"contents": "require 'spec_helper'\n\ndescribe \"Static pages /\" do\n\n  subject { page }\n  let(:base_title) { \"Ruby on Rails Tutorial Sample App\" }\n\n  describe \"Home page /\" do\n\n    before { visit root_path }\n\n    it { should have_content('Sample App') }\n    it { should have_title(full_title('')) }\n    it { should_not have_title(\"| Home\") }\n    \n  end\n\n  describe \"Help page /\" do\n\n    before { visit help_path }\n\n    it { should have_content('Help') }\n    it { should have_title(\"#{base_title} | Help\") }\n\n  end\n\n  describe \"About page /\" do\n\n    it \"should have the content 'About Us'\" do\n      visit about_path\n      expect(page).to have_content('About Us')\n    end\n\n    it \"should have the right title\" do\n      visit about_path\n      expect(page).to have_title(\"#{base_title} | About\")\n    end\n\n  end\n\n  describe \"Contact page /\" do\n\n    it \"should have the content 'Contact'\" do\n      visit contact_path\n      expect(page).to have_content('Contact')\n    end\n\n    it \"should have the right title\" do\n      visit contact_path\n      expect(page).to have_title(\"Ruby on Rails Tutorial Sample App | Contact\")\n    end\n\n  end\nend",
-			"file": "spec/requests/static_pages_spec.rb",
-			"file_size": 1233,
-			"file_write_time": 1377133650000000,
+			"file": "app/views/users/show.html.erb",
 			"settings":
 			{
-				"buffer_size": 1113,
+				"buffer_size": 206,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "spec/support/utilities.rb",
+			"file": "app/controllers/users_controller.rb",
 			"settings":
 			{
-				"buffer_size": 169,
+				"buffer_size": 119,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "spec/spec_helper.rb",
+			"file": "spec/requests/user_pages_spec.rb",
 			"settings":
 			{
-				"buffer_size": 1898,
+				"buffer_size": 1100,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/helpers/users_helper.rb",
+			"settings":
+			{
+				"buffer_size": 318,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/assets/stylesheets/custom.css.scss",
+			"settings":
+			{
+				"buffer_size": 1947,
 				"line_ending": "Unix"
 			}
 		}
@@ -66,6 +139,10 @@
 		"selected_items":
 		[
 			[
+				"inst	",
+				"Package Control: Install Package"
+			],
+			[
 				"rei",
 				"Indentation: Reindent Lines"
 			],
@@ -74,11 +151,31 @@
 				"Package Control: Install Package"
 			],
 			[
-				"install",
-				"Package Control: Install Package"
+				"pret",
+				"Pretty JSON: Reformat (Pretty Print) JSON"
+			],
+			[
+				"json",
+				"Pretty JSON: Reformat (Pretty Print) JSON"
+			],
+			[
+				"packa",
+				"Package Control: Remove Package"
+			],
+			[
+				"rein",
+				"JSON Reindent: reindent file or selection"
 			],
 			[
 				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"syrsp",
+				"Set Syntax: RSpec"
+			],
+			[
+				"install",
 				"Package Control: Install Package"
 			],
 			[
@@ -86,7 +183,7 @@
 				"Set Syntax: Shell Script (Bash)"
 			]
 		],
-		"width": 575.0
+		"width": 530.0
 	},
 	"console":
 	{
@@ -103,22 +200,37 @@
 	},
 	"file_history":
 	[
+		"/Users/lbspen/src/sample_app/Rakefile",
+		"/Users/lbspen/Library/Application Support/Sublime Text 2/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/lbspen/src/sample_app/config/environments/test.rb",
+		"/Users/lbspen/src/sample_app/spec/factories.rb",
+		"/Users/lbspen/src/sample_app/Gemfile",
+		"/Users/lbspen/src/sample_app/spec/models/user_spec.rb",
+		"/Users/lbspen/src/sample_app/app/views/layouts/application.html.erb",
+		"/Users/lbspen/src/sample_app/app/assets/stylesheets/custom.css.scss",
+		"/Users/lbspen/src/sample_app/config/routes.rb",
+		"/Users/lbspen/src/sample_app/app/models/user.rb",
+		"/Users/lbspen/src/sample_app/spec/requests/static_pages_spec.rb",
+		"/Users/lbspen/src/sample_app/spec/helpers/application_helper_spec.rb",
+		"/Users/lbspen/src/sample_app/spec/support/utilities.rb",
+		"/Users/lbspen/src/sample_app/db/migrate/20130826012754_add_index_to_users_email.rb",
+		"/Users/lbspen/src/sample_app/spec/features/static_pages_spec.rb",
+		"/Users/lbspen/src/sample_app/app/views/static_pages/contact.html.erb",
+		"/Users/lbspen/src/sample_app/spec/spec_helper.rb",
+		"/Users/lbspen/src/sample_app/.gitignore",
+		"/Users/lbspen/src/sample_app/app/views/layouts/_header.html.erb",
+		"/Users/lbspen/src/sample_app/app/views/static_pages/home.html.erb",
+		"/Users/lbspen/src/sample_app/app/views/users/new.html.erb",
+		"/Users/lbspen/src/sample_app/spec/requests/user_pages_spec.rb",
+		"/Users/lbspen/src/sample_app/Guardfile",
+		"/Users/lbspen/src/sample_app/app/controllers/static_pages_controller.rb",
+		"/Users/lbspen/src/sample_app/static_pages_spec.rb",
 		"/Users/lbspen/Library/Application Support/Sublime Text 2/Packages/BeautifyRuby/Default (OSX).sublime-keymap",
 		"/Users/lbspen/src/sample_app/app/views/layouts/_footer.html.erb",
-		"/Users/lbspen/src/sample_app/app/views/layouts/_header.html.erb",
-		"/Users/lbspen/src/sample_app/app/views/layouts/application.html.erb",
-		"/Users/lbspen/Library/Application Support/Sublime Text 2/Packages/User/Default (OSX).sublime-keymap",
 		"/Users/lbspen/Library/Application Support/Sublime Text 2/Packages/Default/Default (OSX).sublime-keymap",
-		"/Users/lbspen/src/sample_app/config/routes.rb",
-		"/Users/lbspen/src/sample_app/spec/requests/static_pages_spec.rb",
-		"/Users/lbspen/src/sample_app/app/views/static_pages/home.html.erb",
-		"/Users/lbspen/src/sample_app/app/assets/stylesheets/custom.css.scss",
 		"/Users/lbspen/src/sample_app/app/views/layouts/_shim.html.erb",
 		"/Users/lbspen/src/sample_app/config/application.rb",
-		"/Users/lbspen/src/sample_app/Gemfile",
 		"/Users/lbspen/src/sample_app/app/helpers/application_helper.rb",
-		"/Users/lbspen/src/sample_app/app/views/static_pages/contact.html.erb",
-		"/Users/lbspen/src/sample_app/app/controllers/static_pages_controller.rb",
 		"/Users/lbspen/src/sample_app/app/views/static_pages/help.html.erb",
 		"/Users/lbspen/src/sample_app/example_user.rb",
 		"/Users/lbspen/src/sample_app/app/views/static_pages/about.html.erb",
@@ -130,8 +242,6 @@
 		"/usr/share/postgresql/postgresql.conf.sample",
 		"/Users/lbspen/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
 		"/Users/lbspen/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
-		"/Users/lbspen/src/sample_app/spec/spec_helper.rb",
-		"/Users/lbspen/src/sample_app/Guardfile",
 		"/Users/lbspen/src/sample_app/.rspec",
 		"/Users/lbspen/src/sample_app/README.rdoc",
 		"/Users/lbspen/src/sample_app/config/initializers/secret_token.rb",
@@ -153,7 +263,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 93.0,
+		"height": 0.0,
 		"where_history":
 		[
 		]
@@ -163,6 +273,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"address",
+			"# fill in",
 			"home_path",
 			"'/static_pages/contact'",
 			"'/static_pages/about'",
@@ -189,51 +301,49 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "spec/requests/static_pages_spec.rb",
+					"file": "app/views/users/show.html.erb",
 					"settings":
 					{
-						"buffer_size": 1113,
+						"buffer_size": 206,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								490,
-								490
+								172,
+								172
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/User/RSpec.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 7.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "spec/support/utilities.rb",
+					"file": "app/controllers/users_controller.rb",
 					"settings":
 					{
-						"buffer_size": 169,
+						"buffer_size": 119,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								165,
-								165
+								106,
+								106
 							]
 						],
 						"settings":
@@ -248,28 +358,82 @@
 				},
 				{
 					"buffer": 2,
-					"file": "spec/spec_helper.rb",
+					"file": "spec/requests/user_pages_spec.rb",
 					"settings":
 					{
-						"buffer_size": 1898,
+						"buffer_size": 1100,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								1072,
+								1072
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Rails/Ruby on Rails.tmLanguage",
+							"syntax": "Packages/User/RSpec.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 26.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/helpers/users_helper.rb",
+					"settings":
+					{
+						"buffer_size": 318,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								314,
+								314
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/Ruby on Rails.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/assets/stylesheets/custom.css.scss",
+					"settings":
+					{
+						"buffer_size": 1947,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1823,
+								1823
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SASS/Syntaxes/SASS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1618.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -308,6 +472,10 @@
 		]
 	},
 	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 112.0
+	},
 	"replace":
 	{
 		"height": 0.0
@@ -319,6 +487,102 @@
 		"selected_items":
 		[
 			[
+				"rei",
+				"Rakefile"
+			],
+			[
+				"custom",
+				"app/assets/stylesheets/custom.css.scss"
+			],
+			[
+				"help",
+				"app/helpers/users_helper.rb"
+			],
+			[
+				"test.rb",
+				"config/environments/test.rb"
+			],
+			[
+				"gem",
+				"Gemfile"
+			],
+			[
+				"usersp",
+				"spec/models/user_spec.rb"
+			],
+			[
+				"userc",
+				"app/controllers/users_controller.rb"
+			],
+			[
+				"rout",
+				"config/routes.rb"
+			],
+			[
+				"apphtml",
+				"app/views/layouts/application.html.erb"
+			],
+			[
+				"user",
+				"app/models/user.rb"
+			],
+			[
+				"usp",
+				"spec/models/user_spec.rb"
+			],
+			[
+				"mig",
+				"db/migrate/20130826012754_add_index_to_users_email.rb"
+			],
+			[
+				"userr",
+				"app/models/user.rb"
+			],
+			[
+				"usspec",
+				"spec/models/user_spec.rb"
+			],
+			[
+				"user.rb",
+				"app/models/user.rb"
+			],
+			[
+				"uti",
+				"spec/support/utilities.rb"
+			],
+			[
+				"cont",
+				"app/views/static_pages/contact.html.erb"
+			],
+			[
+				"",
+				".gitignore"
+			],
+			[
+				"head",
+				"app/views/layouts/_header.html.erb"
+			],
+			[
+				"layapp",
+				"app/views/layouts/application.html.erb"
+			],
+			[
+				"hom",
+				"app/views/static_pages/home.html.erb"
+			],
+			[
+				"userht",
+				"app/views/users/new.html.erb"
+			],
+			[
+				"stasp",
+				"spec/features/static_pages_spec.rb"
+			],
+			[
+				"stat",
+				"app/controllers/static_pages_controller.rb"
+			],
+			[
 				"spec",
 				"spec/spec_helper.rb"
 			],
@@ -329,10 +593,6 @@
 			[
 				"foot",
 				"app/views/layouts/_footer.html.erb"
-			],
-			[
-				"head",
-				"app/views/layouts/_header.html.erb"
 			],
 			[
 				"route",
@@ -347,15 +607,7 @@
 				"config/application.rb"
 			],
 			[
-				"gem",
-				"Gemfile"
-			],
-			[
 				"h",
-				"app/views/static_pages/home.html.erb"
-			],
-			[
-				"hom",
 				"app/views/static_pages/home.html.erb"
 			],
 			[
@@ -391,16 +643,8 @@
 				"app/controllers/static_pages_controller.rb"
 			],
 			[
-				"rout",
-				"config/routes.rb"
-			],
-			[
 				"heler",
 				"app/views/static_pages/help.html.erb"
-			],
-			[
-				"help",
-				"spec/spec_helper.rb"
 			],
 			[
 				"home",
